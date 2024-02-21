@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 67, 94);
+}
+
+.container{
+    width: 60%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.text-align{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 50px;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box{
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(81, 198, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_fizzbuzz{
+    background-color: rgb(211, 59, 59);
+}
+
+.box_fizz{
+    background-color: rgb(108, 255, 172);
+}
+
+.box_buzz{
+    background-color: rgb(252, 252, 103) ;
+}
