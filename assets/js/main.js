@@ -1,6 +1,6 @@
 //console.log('it works');
 
-const elementUl = document.querySelector('ul')
+const elementUl = document.querySelector('ul');
 
 //-Scrivere un programma utilizzando il ciclo for per prendere i numeri da 1 a 100
 for (let i=1; i <= 100; i++){
@@ -12,17 +12,23 @@ for (let i=1; i <= 100; i++){
         //SE la mia variabile i/3 scrivo Fizz
         //console.log(i);
         elementUl.innerHTML += '<li>fizz</li>'
+        //elementUl.insertAdjacentHTML('beforeend', `<li>fizz</li>`)
+        //i = 'fizz'
      } else if (i % 5 === 0) {
         //console.log(i);
         elementUl.innerHTML += '<li>buzz</li>'
-     } else if (i % 3 === 0 && i % 5 === 0 ) {
+     }/* else if (i % 3 === 0 &&  i % 5 === 0) {
         console.log(i);
-        elementUl.innerHTML += '<li>fizzbuzz</li>'
+        //elementUl.innerHTML = '<li>fizzbuzz</li>'
+     }*/ else {
+        elementUl.insertAdjacentHTML('beforeend', `<li>${i}</li>`);
      }
 
-     elementUl.insertAdjacentHTML('beforeend', `<li>${i}</li>`)
+
+
+     
     
 //-ALTRIMENTI SE la mia variabile i/5 scrivo Buzz
     //-ALTRIMENTI SE la mia variabile i/5 AND i/3 scrivo FizzBuzz
 
-}
+};
